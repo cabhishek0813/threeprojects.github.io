@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.hour,
+.seconds,
+.minutes,
+.session {
+  font-size: 10rem;
+  font-weight: 600;
+  line-height: 1;
+  color: aliceblue;
+}
+.box {
+  background: #11998e;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .hour,
+  .seconds,
+  .minutes,
+  .session {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+    color: aliceblue;
+  }
+  .box {
+    padding: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hour,
+  .seconds,
+  .minutes,
+  .session {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: aliceblue;
+  }
+  .box {
+    padding: 1rem;
+  }
+  .digital {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hour,
+  .seconds,
+  .minutes,
+  .session {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+    color: aliceblue;
+  }
+  .box {
+    padding: 0.5rem;
+  }
+  .digital {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
